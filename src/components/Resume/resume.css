@@ -1,0 +1,121 @@
+.app__navbar,
+.navbar__menu,
+.tab__name, .file__name {
+  display: flex;
+  align-items: center;
+}
+
+.app__navbar {
+  background-color: var(--app-navbar);
+}
+
+.navbar__menu {
+  padding: 0.5rem;
+  color: var(--icon-text-color);
+}
+.navbar__menu .MuiButtonBase-root {
+  color: var(--icon-text-color);
+}
+.navbar__menu h5 {
+  font-weight: lighter;
+}
+
+.resume__tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;
+  padding: 0.25rem 0.75rem;
+  color: var(--icon-text-color);
+  background-color: var(--tab-bg);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.tab__name {
+  gap: 0.5rem;
+}
+.tab__name h4 {
+  font-weight: var(--tab-font-weight);
+}
+.resume__tab a .MuiSvgIcon-root {
+  color: var(--icon-text-color);
+  margin-top: 0.3rem;
+}
+
+.navbar__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.navbar__buttons > .MuiSvgIcon-root {
+  padding: 0.75rem;
+  font-size: 2.5rem;
+  color: var(--icon-text-color);
+}
+.control__size {
+  transform: rotate(180deg);
+}
+.control__close .MuiSvgIcon-root {
+  color: var(--icon-text-color);
+  padding: 0.5rem;
+  margin-top: 0.125rem;
+  font-size: 2.25rem;
+}
+.control__minimize:hover,
+.control__size:hover {
+  background-color: var(--navbar-button-hover);
+}
+.control__close:hover {
+  background-color: var(--navbar-button-close);
+}
+
+.app__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--app-navigation);
+  box-shadow: -2px 2px 3px black;
+}
+.file__name h4, .app__buttons .MuiSvgIcon-root {
+  color: var(--icon-text-color);
+}
+.file__name a .MuiSvgIcon-root {
+  color: var(--icon-text-color);
+  margin-top: 0.25rem;
+}
+.app__buttons {
+  display: flex;
+  align-items: center;
+}
+
+
+.app__screen {
+  display: flex;
+  height: calc(100vh - 105px);
+}
+.app__screen iframe {
+  width: 100%;
+}
+
+.app__sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+  background-color: var(--tab-bg);
+  color: var(--icon-text-color);
+}
+.app__sidebar h5:first-child {
+  padding: 0.5rem 0.75rem;
+  background-color: var(--app-navbar);
+  border: 1px var(--app-border) solid;
+  border-radius: 0.25rem;
+}
+.app__sidebar .MuiDivider-root {
+  width: 100%;
+  border-color: var(--app-border);
+}

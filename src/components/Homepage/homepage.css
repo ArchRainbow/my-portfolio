@@ -1,0 +1,113 @@
+.homepage__container {
+  box-shadow: inset 0px 2px 10px #0a0a0a;
+  background-image: var(--homepage-bg-phone-url);
+  background-attachment: fixed;
+  transition: all 1s ease;
+  background-position: var(--homepage-bg-position);
+}
+
+.presentation__container {
+  height: calc(100vh - 46px);
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.homepage__icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem;
+}
+
+.icon__grid,
+.mobile__settings {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.mobile__settings {
+  align-items: center;
+  background-color: transparent;
+}
+.icon__grid {
+  padding: 0.5rem 1rem;
+  border: 1px transparent solid;
+}
+
+.icon__grid img,
+.mobile__settings img {
+  width: 60px;
+}
+.icon__grid a,
+.mobile__settings h4 {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 2px 2px #0a0a0a;
+}
+
+.introduction__text {
+  width: 100%;
+  padding-right: 2rem;
+  margin: none;
+  text-align: right;
+  color: white;
+}
+.introduction__text h1 {
+  font-family: "Londrina Shadow";
+  font-size: 5rem;
+  letter-spacing: 2px;
+}
+.introduction__text h3 {
+  font-family: "Rancho";
+  font-size: 2rem;
+  text-shadow: 2px 5px 3px #0a0a0a;
+}
+.introduction__text h4 {
+  font-family: "Rancho";
+  font-size: 1.5rem;
+  text-shadow: -1px 6px 5px #0a0a0a;
+}
+
+.home__button svg {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 767px) {
+  .homepage__container {
+    background-image: var(--homepage-bg-url);
+    background-size: contain;
+  }
+
+  .presentation__container {
+    height: calc(100vh - 62px);
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 0;
+  }
+
+  .introduction__text {
+    margin: auto 0.5rem;
+  }
+  .introduction__text h1 {
+    font-size: 9rem;
+  }
+  .introduction__text h3 {
+    font-size: 5rem;
+  }
+  .introduction__text h4 {
+    font-size: 3rem;
+  }
+
+  .homepage__icons,
+  .icon__grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon__grid:hover {
+    background-color: #f0f0f040;
+    border: 1px white solid;
+    border-radius: 0.25rem;
+  }
+}

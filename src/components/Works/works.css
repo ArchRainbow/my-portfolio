@@ -1,0 +1,460 @@
+.works__container {
+  background-color: var(--works-bg-color);
+}
+
+.works__container .header__container .MuiAppBar-root {
+  width: auto;
+  bottom: 32px;
+  right: 32px;
+  left: 32px;
+}
+
+.works__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--works-navbar);
+}
+
+.navbar__tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+  padding: 0.25rem 1rem;
+  text-align: left;
+  color: var(--icon-text-color);
+  background-color: var(--tab-bg);
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+}
+.navbar__tab h4 {
+  font-weight: var(--tab-font-weight);
+}
+.navbar__tab h4::first-letter {
+  font-family: 'Londrina Shadow';
+}
+.navbar__tab a .MuiSvgIcon-root {
+  color: var(--icon-text-color);
+  margin-top: 0.3rem;
+}
+
+.navbar__control {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.navbar__control > .MuiSvgIcon-root {
+  padding: 0.75rem;
+  font-size: 2.5rem;
+  color: var(--icon-text-color);
+}
+.navbar__control .settings__icon .MuiSvgIcon-root {
+  color: var(--icon-text-color);
+}
+.control__size, .rotate {
+  transform: rotate(180deg);
+}
+.control__close .MuiSvgIcon-root {
+  padding: 0.5rem;
+  margin-top: 0.125rem;
+  font-size: 2.5rem;
+  color: var(--icon-text-color);
+}
+.control__minimize:hover, .control__size:hover {
+  background-color: var(--navbar-button-hover);
+}
+.control__close:hover {
+  background-color: var(--navbar-button-close);
+}
+
+.works__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--works-navigation);
+}
+.works__navigation .link__page {
+  width: 16rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--works-navigation-tab);
+  color: var(--icon-text-color);
+  font-weight: var(--tab-font-weight);
+}
+.works__navigation .tabs__number {
+  padding: 0.25rem;
+  color: var(--icon-text-color);
+  border: 2px var(--icon-text-color) solid;
+  border-radius: 20%;
+}
+.works__navigation .MuiSvgIcon-root {
+  color: var(--icon-text-color);
+}
+
+.settings__menu .MuiPaper-root {
+  background-color: var(--works-menu-bg);
+}
+.settings__menu .MuiPaper-root .MuiToggleButtonGroup-root .MuiButtonBase-root {
+  color: white;
+}
+.settings__menu .MuiPaper-root .MuiToggleButtonGroup-root .Mui-selected {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.settings__menu .MuiPaper-root .MuiToggleButtonGroup-root .MuiButtonBase-root:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+.works__screen {
+  height: calc(100vh - 110px);
+  width: 95%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.works__screen h1 {
+  font-family: "Londrina Shadow", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 1rem 3rem;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+}
+
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5rem;
+  justify-content: center;
+  /* position: relative; */
+  z-index: -1;
+}
+
+.project__container {
+  height: 37rem;
+  margin-bottom: 2rem;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* SPA classes */
+.spa__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  background-color: #FDEDDB;
+}
+.spa__page .page__preview {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-bottom: 2px #41180F solid;
+}
+.spa__page .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 3rem;
+}
+.spa__page .card__name, .spa__page .card__description {
+  padding: 1rem 0.5rem;
+  text-align: center;
+  background-color: #FCE1C3;
+  border: 2px #FFBB89 solid;
+  border-radius: 1rem;
+}
+.spa__page .card__buttons .button__visit {
+  background-color: #41180F;
+}
+.spa__page .card__buttons .button__github {
+  border-color: #41180F;
+  color: #0a0a0a;
+}
+.spa__page .card__buttons .button__visit, 
+.spa__page .card__buttons .button__github {
+  padding: 0.5rem 2rem;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.spa__page .card__buttons .button__visit:hover {
+  background-color: #712e1e;
+}
+.spa__page .card__buttons .button__github:hover {
+  background-color: #FCE5CA;
+}
+
+
+/* Pokemon Game classes */
+.pokemon__page {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  border: 1rem silver solid;
+  border-radius: 0.5rem;
+  background-image: url("../../app/sun-tornado.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5), 7px 6px 0 5px #a3a1a1,
+    0 10px 5px 2px rgba(0, 0, 0, 0.5), 1px 11px 0 9px #e0c593,
+    0 20px 4px 2px rgba(0, 0, 0, 0.5);
+}
+.pokemon__page .card__name {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: "Silkscreen", serif;
+  font-weight: 400;
+}
+.pokemon__page .page__preview {
+  width: 75%;
+  margin: 1.5rem 0;
+  border: 0.5rem silver ridge;
+}
+.pokemon__page .card__content {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0 1rem;
+}
+.pokemon__page .card__description {
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 2px #c9c9c9d1 solid;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+.pokemon__page .card__buttons {
+  flex-direction: column;
+}
+.pokemon__page .card__buttons .button__visit {
+  background-color: #c9c9c9d1;
+  border: 4px #d6c4c4 outset;
+  color: #0a0a0a;
+}
+.pokemon__page .card__buttons .MuiDivider-root {
+  border-color: #c9c9c9d1;
+  border-width: 1px;
+}
+.pokemon__page .card__buttons .button__github {
+  background-image: linear-gradient(
+    to right,
+    #faef53 0%,
+    #e1f5c4 75%,
+    #faef53 100%
+  );
+  border: 4px white outset;
+  color: #0a0a0a;
+  transition: 0.3s;
+  background-size: 200% auto;
+}
+.pokemon__page .card__buttons .button__visit:hover,
+.pokemon__page .card__buttons .button__github:hover {
+  box-shadow: 2px 3px 8px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Notepad App classes */
+.notepad__page {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 7px 0 -2px #fcf2bd,
+    0 10px 1px -4px rgba(0, 0, 0, 0.5), 0 14px 0 -4px #fcf2bd,
+    0 20px 1px -9px rgba(0, 0, 0, 0.5);
+  background: repeating-linear-gradient(
+    #fcf2bd,
+    #fcf2bd 31px,
+    #83b2ff 31px,
+    #83b2ff 32px
+  );
+}
+.notepad__page .card__name {
+  font-family: "Rancho", cursive;
+  font-size: 3.5rem;
+  background-color: #351111;
+  text-align: center;
+  color: #f2f2f2;
+  border-bottom: #181414 0.5rem groove;
+  border-right: #352727 0.25rem solid;
+  box-shadow: 0px 4px 3px -1px #1c1b1bab;
+}
+.notepad__page .page__preview {
+  width: 80%;
+  border: #192727bd 6px double;
+  margin: 1rem auto;
+}
+.notepad__page .card__content {
+  padding: 0 1rem;
+}
+.notepad__page .card__description {
+  font-family: "Rancho", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.notepad__page .card__buttons .button__visit, 
+.notepad__page .card__buttons .button__github {
+  padding: 2rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.notepad__page .card__buttons .button__visit {
+  background: linear-gradient(
+    to bottom,
+    #fbb546 0%,
+    #fbb546 25%,
+    #fbbe61 25%,
+    #fbbe61 100%
+  );
+  color: #0a0a0a;
+}
+.notepad__page .card__buttons .button__github {
+    background: linear-gradient(
+        to bottom,
+        #6E9ACB 0%,
+        #6E9ACB 25%,
+        #8AA9D8 25%,
+        #8AA9D8 100%
+    );
+    border: none;
+    color: white;
+}
+.notepad__page .card__buttons .button__visit::before,
+.notepad__page .card__buttons .button__github::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -1.95em;
+    left: 0;
+}
+.notepad__page .card__buttons .button__visit::before {
+    border: 1em solid #fbbe61;
+}
+.notepad__page .card__buttons .button__github::before {
+    border: 1em solid #8AA9D8;
+}
+.notepad__page .card__buttons .button__visit:hover::before,
+.notepad__page .card__buttons .button__github:hover::before {
+  right: 2em;
+}
+.notepad__page .card__buttons .button__visit:hover::after,
+.notepad__page .card__buttons .button__github:hover::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1.97em;
+  border-width: 2em 2em 0 0;
+  border-style: solid;
+  filter: drop-shadow(-4px 5px 9px rgba(0,0,0,0.5));
+  z-index: 2;
+}
+.notepad__page .card__buttons .button__visit:hover::after {
+  border-color: #FAD28C transparent;
+}
+.notepad__page .card__buttons .button__github:hover::after {
+  border-color: #9FB9DA transparent;
+}
+
+/* Portfolio classes */
+.portfolio__page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: #151414 solid;
+  border-width: 14px 10px;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px #676767;
+  background: linear-gradient(to top,
+    #BFB1C2 0%,
+    #BFB1C2 50%,
+    #8F9CC8 75%,
+    #f2f2f2 75%,
+    #f2f2f2 100%);
+}
+.portfolio__page::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+.portfolio__page .page__preview {
+  width: 100%;
+  height: 50%;
+  border: 4px #6b7bb3 solid;
+}
+.portfolio__page .card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: inherit;
+  border: 5px #f2f2f2 solid;
+  text-align: center;
+}
+.portfolio__page .card__content .card__name {
+  font-family: "Silkscreen", serif;
+  font-size: 2.5rem;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  background: linear-gradient(to right,
+    #f2f2f2 0%,
+    #f2f2f2 33%,
+    #Bfb1c2 33%,
+    #BFB1C2 66%,
+    #f2f2f2 66%,
+    #f2f2f2 100%);
+  border-bottom: 2px #f2f2f2 solid;
+}
+.portfolio__page .card__content .card__description {
+  padding: 1rem 0;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.portfolio__page .card__buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  border-top: 2px #f2f2f2 solid;
+}
+.portfolio__page .card__buttons .button__visit {
+  background-color: #f2f2f2;
+  color: #0a0a0a;
+  padding: 0.5rem 1rem;
+}
+.portfolio__page .card__buttons .button__github {
+  border-color: #f2f2f2;
+  color: #191025;
+}
+
+@media screen and (min-width: 767px) {
+  .works__screen h1 {
+    font-size: 4.5rem;
+    text-align: left;
+  }
+  .cards__container {
+    grid-template-columns: repeat(2, 33%);
+  }
+
+  .pokemon__page .card__name {
+    font-weight: 600;
+  }
+}

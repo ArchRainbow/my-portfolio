@@ -1,0 +1,29 @@
+{
+    "homepage.introduction.hello": "Hello",
+    "homepage.introduction.name": "My name is ",
+    "homepage.introduction.description": "I'm a Front End Developer",
+    "homepage.icons.work": "Works",
+    "homepage.icons.resume": "Resume",
+    "homepage.icons.contact": "Contacts",
+
+    "works.tabTitle": "K | Works",
+    "works.url": "myportfolio.com/works",
+    "works.title": "My projects",
+    "works.visitButton": "Visit",
+    "works.data.spa.title": "\u27B3 First project - SPA \u27B3",
+    "works.data.spa.description": "A simple, responsive Single Page Application. This is one of the first pages I made as part of a course I took when I started on web development.",
+    "works.data.pokemon.title": "Pokemon Game \u2003\u2003 HP 180",
+    "works.data.pokemon.description": "\u1360 A classic Guess the Pokemon game made following a course as part of my endeavour on learning Vue.",
+    "works.data.notepad.title": "Notepad",
+    "works.data.notepad.description": "A React practice notepad project that allows you to create, edit and delete notes.",
+    "works.data.portfolio.title": "Portfolio",
+    "works.data.portfolio.description": "This very page. It's a responsive page that showcases my projects and skills.",
+
+    "resume.tabTitle": "Resume.pdf",
+
+    "contacts.programTitle": "Contacts.exe",
+    "contacts.title": "Select one!",
+    "contacts.data.github": "Check the code",
+    "contacts.data.email": "Send an email",
+    "contacts.data.linkedin": "Send a message"
+}

@@ -1,0 +1,130 @@
+.taskbar__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.taskbar__container .MuiAppBar-root {
+  background-color: #40324C8C;
+  box-shadow: inset 0px -3px 6px 0px #242121;
+  border-left: 1rem #3F3F41 solid;
+  border-right: 1rem #3F3F41 solid;
+}
+
+.taskbar__container .MuiToolbar-root {
+  justify-content: space-between;
+}
+
+:is(.home__button, .phone__home__button) .MuiSvgIcon-root {
+  color: white;
+}
+.home__button .MuiSvgIcon-root {
+  font-size: 2rem;
+}
+
+.theme__popper, .language__popper {
+  background-color: #3b3344;
+  padding: 0.5rem;
+}
+:is(.theme__popper, .language__popper) .MuiToggleButtonGroup-root .MuiButtonBase-root {
+  color: white;
+  background-color: #59506B;
+}
+.theme__popper .MuiToggleButtonGroup-root .Mui-selected, 
+.language__popper .MuiToggleButtonGroup-root .Mui-selected {
+  background-color: #6B6479;
+}
+.theme__popper .MuiButtonBase-root:hover, 
+.language__popper .MuiButtonBase-root:hover {
+  background-color: #3F314B;
+}
+
+.language__toggle {
+  width: 100%;
+}
+.language__toggle > .MuiButtonBase-root {
+  width: 50%;
+}
+
+.date__time {
+  padding: 0 0.5rem;
+}
+.date__time h5 {
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* Mobile */
+.phone__taskbar .MuiToolbar-root {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 44px;
+  background-color: #111114;
+}
+.phone__taskbar .menu__button {
+  transform: rotate(90deg);
+}
+
+.swiper__container .MuiPaper-root {
+  overflow-y: initial;
+  height: calc(100vh - 90px);
+  width: calc(100vw - 2rem);
+  margin: 1.5rem auto;
+  background-color: #575757e6;
+}
+.swiper__puller {
+  width: 46px;
+  height: 8px;
+  background-color: #d47474;
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 15px);
+}
+
+.swiper__container .swiper__top__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  color: white;
+}
+.swiper__top__info h4 {
+  font-weight: 400;
+  font-family: Verdana, sans-serif;
+}
+.swiper__top__info .MuiSvgIcon-root {
+  margin-left: 0.25rem;
+  color: white;
+}
+
+.swiper__content .content__toggles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 2rem;
+}
+.swiper__content .MuiDivider-root {
+  border-color: white;
+  border-width: 1px;
+}
+.swiper__content .MuiToggleButtonGroup-root {
+  width: 100%;
+  background-color: #2f2c64c8;
+}
+.swiper__content .MuiToggleButtonGroup-root .MuiButtonBase-root {
+  width: 50%;
+}
+.swiper__content .MuiToggleButtonGroup-root .Mui-selected {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.swiper__content .MuiToggleButtonGroup-root .MuiButtonBase-root .MuiSvgIcon-root {
+  font-size: 3rem;
+  color: white;
+}
+.swiper__content .MuiToggleButtonGroup-root .MuiButtonBase-root h4 {
+  font-size: 2rem;
+  color: white;
+  font-family: "Silkscreen", serif;
+}

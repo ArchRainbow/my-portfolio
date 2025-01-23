@@ -1,24 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HomePage from "./components/Homepage/homepage";
+import { useMediaQuery } from "./hooks/use-media-query";
+import mediaQueries from "./utils/constants";
 
 function App() {
+  const isTablet = useMediaQuery(mediaQueries.tablet);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={isTablet ? "frame__desktop" : "frame__phone"}>
+      <HomePage />
     </div>
   );
 }
