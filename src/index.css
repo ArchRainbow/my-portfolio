@@ -50,8 +50,8 @@ body {
 
 
 [data-theme='dark'] {
-  --homepage-bg-url: url("/src/app/cloudy-night.png");
-  --homepage-bg-phone-url: url("/src/app/cloudy-night_phone.png");
+  --homepage-bg-url: url("/src/assets/cloudy-night.png");
+  --homepage-bg-phone-url: url("/src/assets/cloudy-night_phone.png");
   --homepage-bg-position: right;
   --works-bg-color: #1a1832;
   --works-navbar: #111114;
@@ -71,8 +71,8 @@ body {
 
 
 [data-theme='light'] {
-  --homepage-bg-url: url("/src/app/sunny-day.png");
-  --homepage-bg-phone-url: url("/src/app/sunny-day_phone.png");
+  --homepage-bg-url: url("/src/assets/sunny-day.png");
+  --homepage-bg-phone-url: url("/src/assets/sunny-day_phone.png");
   --homepage-bg-position: left;
   --works-bg-color: #4bb0db;
   --works-navbar: #E3E3E8;

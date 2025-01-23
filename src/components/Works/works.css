@@ -201,7 +201,7 @@
   align-items: center;
   border: 1rem silver solid;
   border-radius: 0.5rem;
-  background-image: url("../../app/sun-tornado.svg");
+  background-image: url("../../assets/sun-tornado.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
