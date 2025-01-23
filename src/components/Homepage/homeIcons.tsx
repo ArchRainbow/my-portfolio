@@ -1,8 +1,8 @@
-import trashbin from "../../app/icons/garbage-bin.png";
-import music from "../../app/icons/headphones.png";
-import work from "../../app/icons/books.png";
-import resume from "../../app/icons/folder.png";
-import contact from "../../app/icons/contact.png";
+import trashbin from "../../assets/icons/garbage-bin.png";
+import music from "../../assets/icons/headphones.png";
+import work from "../../assets/icons/books.png";
+import resume from "../../assets/icons/folder.png";
+import contact from "../../assets/icons/contact.png";
 import messages from "./homepage.messages";
 
 type HomeIconsType = {

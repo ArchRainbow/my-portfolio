@@ -1,7 +1,7 @@
-import notepad from '../../app/notepad.png'
-import pokemon from '../../app/pokemon.png'
-import spaWeb from '../../app/spa.png'
-import portfolio from '../../app/portfolio.png'
+import notepad from '../../assets/notepad.png'
+import pokemon from '../../assets/pokemon.png'
+import spaWeb from '../../assets/spa.png'
+import portfolio from '../../assets/portfolio.png'
 import messages from './works.messages';
 
 type WorkType = {
@@ -59,7 +59,7 @@ export const workData: WorkType[] = [
     description: messages.data.portfolio.description,
     image: portfolio,
     link: "",
-    github: "",
+    github: "https://github.com/ArchRainbow/my-portfolio",
     cardClass: "portfolio__page",
     titleTop: false,
   },
