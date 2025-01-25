@@ -93,6 +93,7 @@ body {
 /* Scrollbar */
 *::-webkit-scrollbar {
   width: 1rem;
+  display: none;
 }
 
 *::-webkit-scrollbar-track {
@@ -108,4 +109,10 @@ body {
 
 *::-webkit-scrollbar-thumb:hover {
   background-color: #9c92f8;
+}
+
+@media screen and (min-width: 767px) {
+  *::-webkit-scrollbar {
+    display: block;
+  }
 }

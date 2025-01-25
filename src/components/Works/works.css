@@ -163,7 +163,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 0 3rem;
+  padding: 0 0.5rem;
 }
 .spa__page .card__name, .spa__page .card__description {
   padding: 1rem 0.5rem;
@@ -171,6 +171,9 @@
   background-color: #FCE1C3;
   border: 2px #FFBB89 solid;
   border-radius: 1rem;
+}
+.spa__page .card__buttons {
+  flex-direction: column;
 }
 .spa__page .card__buttons .button__visit {
   background-color: #41180F;
@@ -231,9 +234,9 @@
   padding: 0.5rem 0;
   margin-bottom: 1rem;
   border-bottom: 2px #c9c9c9d1 solid;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 1rem;
 }
 .pokemon__page .card__buttons {
@@ -300,8 +303,9 @@
 }
 .notepad__page .card__description {
   font-family: "Rancho", serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
+  line-height: 40px;
 }
 .notepad__page .card__buttons .button__visit, 
 .notepad__page .card__buttons .button__github {
@@ -396,7 +400,7 @@
 }
 .portfolio__page .page__preview {
   width: 100%;
-  height: 50%;
+  height: 40%;
   border: 4px #6b7bb3 solid;
 }
 .portfolio__page .card__content {
@@ -429,9 +433,10 @@
 }
 
 .portfolio__page .card__buttons {
-  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   gap: 1rem;
+  width: 80%;
   padding-top: 0.5rem;
   border-top: 2px #f2f2f2 solid;
 }
@@ -445,6 +450,16 @@
   color: #191025;
 }
 
+@media screen and (max-width: 380px) {
+  .cards__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .pokemon__page .card__name {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .works__screen h1 {
     font-size: 4.5rem;
@@ -454,7 +469,22 @@
     grid-template-columns: repeat(2, 33%);
   }
 
-  .pokemon__page .card__name {
-    font-weight: 600;
+  .spa__page .card__content {
+    padding: 0 3rem;
+  }
+  .spa__page .card__buttons, .portfolio__page .card__buttons {
+    flex-direction: row;
+  }
+
+  .pokemon__page .card__description {
+    font-size: 1.2rem;
+  }
+
+  .notepad__page .card__description {
+    font-size: 2rem;
+  }
+
+  .portfolio__page .page__preview {
+    height: 50%;
   }
 }

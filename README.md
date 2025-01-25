@@ -4,7 +4,7 @@ This is my portfolio page created with React to showcase my skills in design and
 
 ## Live Link
 
-Checkout the page on this link: 
+Checkout the page on this link: https://karen-funes.netlify.app/
 
 ## Status
 

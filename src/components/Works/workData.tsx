@@ -58,7 +58,7 @@ export const workData: WorkType[] = [
     name: messages.data.portfolio.title,
     description: messages.data.portfolio.description,
     image: portfolio,
-    link: "",
+    link: "https://karen-funes.netlify.app/",
     github: "https://github.com/ArchRainbow/my-portfolio",
     cardClass: "portfolio__page",
     titleTop: false,
