@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import {
@@ -35,6 +35,15 @@ const router = createBrowserRouter([
 
 function MyApp() {
   const [locale, setLocale] = useState(defaultLocale);
+
+  const browserLocale = navigator.language.split(/[-_]/)[0];
+  const appLocale = browserLocale === 'es' ? 'es' : 'en';
+
+  useEffect(() => {
+    if (locale !== appLocale) {
+      setLocale(appLocale);
+    }
+  },[appLocale, locale]);
 
   return (
     <LocaleContext.Provider value={{ locale, setLocale }}>

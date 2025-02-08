@@ -30,6 +30,11 @@ function Resume() {
   const intl = useIntl();
   const isTablet = useMediaQuery(mediaQueries.tablet);
 
+  const pdfUrl =
+    intl.locale === "es"
+      ? "https://drive.google.com/file/d/1VYH0rzmCHTbeCeFHHERnDJ9mwXVr8v2E/preview"
+      : "https://drive.google.com/file/d/1Nmc6V07uPjF5SbmmRwvWtO5VcklhJhEj/preview";
+
   const handleOpenMenu = (event: MouseEvent<HTMLButtonElement>) => {
     setSettingsMenuAnchor(event.currentTarget);
   };
@@ -81,7 +86,7 @@ function Resume() {
 
         <div className="app__screen">
           <iframe
-            src="https://drive.google.com/file/d/1J5FAhypUdRfaitdyNF-SSd93yCls6CGN/preview"
+            src={pdfUrl}
             width="70%"
             height="100%"
             allow="autoplay"
