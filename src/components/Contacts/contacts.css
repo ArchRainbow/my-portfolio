@@ -17,9 +17,6 @@
 .navbar__title h3 {
   font-weight: 400;
 }
-.navbar__buttons .settings__icon .MuiSvgIcon-root {
-  color: var(--icon-text-color);
-}
 
 .settings__menu .MuiPaper-root {
   background-color: #0367f0;

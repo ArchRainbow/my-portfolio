@@ -26,6 +26,10 @@ const messages = {
       id: "homepage.icons.contact",
       defaultMessage: "Contactos",
     },
+    hangman: {
+      id: "homepage.icons.hangman",
+      defaultMessage: "Ahorcado",
+    },
   },
 };
 

@@ -67,6 +67,11 @@ body {
   --tab-font-weight: lighter;
   --contacts-bg-color: #211f37;
   --contacts-navbar-color: #2f2c64;
+  --hangman-bg-color: #013636;
+  --hangman-navbar-color: #008b8b;
+  --hangman-detail-color: #46d446;
+  --hangman-settings-bg: #016e6e;
+  --hangman-message-color: #ffd700;
 }
 
 
@@ -88,6 +93,11 @@ body {
   --tab-font-weight: bold;
   --contacts-bg-color: #c299de;
   --contacts-navbar-color: #554ed1;
+  --hangman-bg-color: #fae6b1;
+  --hangman-navbar-color: #ffa101;
+  --hangman-detail-color: #fa5a25;
+  --hangman-settings-bg: #fcb233;
+  --hangman-message-color: #5a17b0;
 }
 
 /* Scrollbar */

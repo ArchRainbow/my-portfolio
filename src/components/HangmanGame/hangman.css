@@ -1,0 +1,32 @@
+.game__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--hangman-navbar-color);
+    color: var(--icon-text-color);
+    font-family: 'Silkscreen', cursive;
+}
+
+.hangmanIndex__container {
+    background-color: var(--hangman-bg-color);
+}
+
+.game__navbar .navbar__title a {
+    text-decoration: none;
+}
+.game__navbar .navbar__title h3 {
+    font-weight: 400;
+    color: var(--icon-text-color);
+}
+
+.settings__menu .MuiPaper-root {
+    background-color: var(--hangman-settings-bg);
+}
+
+.hiScore__container {
+    text-align: center;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    margin: 0.5rem 0;
+    color: var(--icon-text-color);
+}

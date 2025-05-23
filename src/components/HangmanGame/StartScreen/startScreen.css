@@ -1,0 +1,77 @@
+.gameStart__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 150px);
+    font-family: "Fuzzy Bubbles", sans-serif;
+    color: var(--icon-text-color);
+}
+
+.start__title {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.start__description {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.start__options, .options__select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MuiPopover-root .MuiPaper-root {
+    height: 220px;
+}
+
+.options__select .MuiFormControl-root .MuiInputBase-root {
+    background-color: var(--hangman-navbar-color);
+    color: var(--icon-text-color);
+    border-radius: 0rem;
+    margin: 1rem;
+}
+.options__select .MuiFormControl-root .MuiInputBase-root div {
+    text-transform: capitalize;
+    padding: 1rem 3rem;
+    font-family: monospace;
+}
+.options__select .MuiFormControl-root .MuiInputBase-root:hover::before {
+    border-color: var(--hangman-detail-color);
+}
+.options__select .MuiPaper-root {
+    left: 468px;
+}
+.options__select .MuiPaper-root .MuiList-root {
+    padding: 0.5rem 1.5rem;
+}
+.options__select .MuiPaper-root .MuiList-root:nth-child(odd) {
+    background-color: var(--hangman-navbar-color);
+}
+
+.gameStart__container .start__button {
+    border-color: var(--hangman-navbar-color);
+    font-family: 'Silkscreen', cursive;
+    color: var(--icon-text-color);
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+
+@media screen and (min-width: 767px) {
+    .start__title {
+        font-size: 3rem;
+    }
+    .start__description {
+        font-size: 1.5rem;
+    }
+    .options__select {
+        flex-direction: row;
+    }
+    .MuiPopover-root .MuiPaper-root {
+        height: auto;
+    }
+}

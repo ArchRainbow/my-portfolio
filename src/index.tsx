@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import {
@@ -10,6 +10,7 @@ import MyWorks from './pages/works';
 import App from './pages/homepage';
 import Resume from './pages/resume';
 import Contacts from './pages/contacts';
+import Hangman from './pages/hangman';
 import { IntlProvider } from 'react-intl';
 import { messages, defaultLocale } from './translations';
 import { LocaleContext } from './translations/localeContext';
@@ -30,20 +31,15 @@ const router = createBrowserRouter([
   {
     path: '/contacts',
     element: <Contacts />
-  }
+  },
+  {
+    path: '/hangman',
+    element: <Hangman />
+  },
 ]);
 
 function MyApp() {
   const [locale, setLocale] = useState(defaultLocale);
-
-  const browserLocale = navigator.language.split(/[-_]/)[0];
-  const appLocale = browserLocale === 'es' ? 'es' : 'en';
-
-  useEffect(() => {
-    if (locale !== appLocale) {
-      setLocale(appLocale);
-    }
-  },[appLocale, locale]);
 
   return (
     <LocaleContext.Provider value={{ locale, setLocale }}>
