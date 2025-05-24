@@ -42,33 +42,10 @@
   margin-top: 0.3rem;
 }
 
-.navbar__buttons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-}
-.navbar__buttons > .MuiSvgIcon-root {
-  padding: 0.75rem;
-  font-size: 2.5rem;
-  color: var(--icon-text-color);
-}
-.control__size {
-  transform: rotate(180deg);
-}
 .control__close .MuiSvgIcon-root {
-  color: var(--icon-text-color);
-  padding: 0.5rem;
-  margin-top: 0.125rem;
   font-size: 2.25rem;
 }
-.control__minimize:hover,
-.control__size:hover {
-  background-color: var(--navbar-button-hover);
-}
-.control__close:hover {
-  background-color: var(--navbar-button-close);
-}
+
 
 .app__navigation {
   display: flex;

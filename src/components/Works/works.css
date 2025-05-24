@@ -39,35 +39,6 @@
   margin-top: 0.3rem;
 }
 
-.navbar__control {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-}
-.navbar__control > .MuiSvgIcon-root {
-  padding: 0.75rem;
-  font-size: 2.5rem;
-  color: var(--icon-text-color);
-}
-.navbar__control .settings__icon .MuiSvgIcon-root {
-  color: var(--icon-text-color);
-}
-.control__size, .rotate {
-  transform: rotate(180deg);
-}
-.control__close .MuiSvgIcon-root {
-  padding: 0.5rem;
-  margin-top: 0.125rem;
-  font-size: 2.5rem;
-  color: var(--icon-text-color);
-}
-.control__minimize:hover, .control__size:hover {
-  background-color: var(--navbar-button-hover);
-}
-.control__close:hover {
-  background-color: var(--navbar-button-close);
-}
 
 .works__navigation {
   display: flex;

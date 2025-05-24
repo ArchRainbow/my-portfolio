@@ -3,6 +3,7 @@ import music from "../../assets/icons/headphones.png";
 import work from "../../assets/icons/books.png";
 import resume from "../../assets/icons/folder.png";
 import contact from "../../assets/icons/contact.png";
+import hangman from '../../assets/icons/hangman.png';
 import messages from "./homepage.messages";
 
 type HomeIconsType = {
@@ -38,6 +39,12 @@ export const fixedIcons: HomeIconsType[] = [
     text: messages.icons.contact,
     link: "/contacts",
   },
+  {
+    id: 5,
+    icon: hangman,
+    text: messages.icons.hangman,
+    link: "/hangman",
+  }
 ]
 
 export const homeIconsDesktop: HomeIconsType[] = [

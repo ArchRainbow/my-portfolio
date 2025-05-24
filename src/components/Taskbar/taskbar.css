@@ -67,7 +67,7 @@
 
 .swiper__container .MuiPaper-root {
   overflow-y: initial;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 100px);
   width: calc(100vw - 2rem);
   margin: 1.5rem auto;
   background-color: #575757e6;

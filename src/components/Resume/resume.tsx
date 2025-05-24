@@ -2,11 +2,8 @@ import {
   ArrowBackOutlined,
   Close,
   Edit,
-  FilterNoneSharp,
   KeyboardArrowDown,
   KeyboardArrowUp,
-  Menu,
-  Minimize,
   MoreVert,
   Refresh,
   StarBorderOutlined,
@@ -22,6 +19,7 @@ import { useIntl } from "react-intl";
 import messages from "./resume.messages";
 import { useState, MouseEvent } from "react";
 import TogglesMenu from "../Taskbar/TogglesMenu/togglesMenu";
+import Navbar from "../Navbar/navbar";
 
 function Resume() {
   const [settingsMenuAnchor, setSettingsMenuAnchor] =
@@ -39,34 +37,28 @@ function Resume() {
     setSettingsMenuAnchor(event.currentTarget);
   };
 
+  const resumeTab = (
+    <div className="resume__tab">
+      <div className="tab__name">
+        <StarBorderOutlined />
+        <h4>{intl.formatMessage(messages.tabTitle)}</h4>
+      </div>
+      <Link to="/">
+        <Close fontSize="small" />
+      </Link>
+    </div>
+  );
+
   return (
     <>
       <div className={`${isTablet ? "frame__desktop" : ""}app__container`}>
         {isTablet ? (
-          <div className="app__navbar">
-            <div className="navbar__menu">
-              <IconButton onClick={handleOpenMenu}>
-                <Menu />
-              </IconButton>
-              <h5>Menu</h5>
-            </div>
-            <div className="resume__tab">
-              <div className="tab__name">
-                <StarBorderOutlined />
-                <h4>{intl.formatMessage(messages.tabTitle)}</h4>
-              </div>
-              <Link to="/">
-                <Close fontSize="small" />
-              </Link>
-            </div>
-            <div className="navbar__buttons">
-              <Minimize className="control__minimize" />
-              <FilterNoneSharp className="control__size" />
-              <Link to="/" className="control__close">
-                <Close />
-              </Link>
-            </div>
-          </div>
+          <Navbar
+            containerClassName="app__navbar"
+            isResume
+            titleobject={resumeTab}
+            handleOpenMenu={handleOpenMenu}
+          />
         ) : (
           <div className="app__navigation">
             <div className="file__name">

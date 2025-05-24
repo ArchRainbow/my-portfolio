@@ -104,6 +104,10 @@
     display: flex;
     flex-direction: column;
   }
+  .homepage__icons {
+    height: 80vh;
+    flex-wrap: wrap;
+  }
 
   .icon__grid:hover {
     background-color: #f0f0f040;

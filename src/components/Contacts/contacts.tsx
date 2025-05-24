@@ -1,25 +1,21 @@
 import { MouseEvent, useState } from "react";
 import {
-  Close,
   ContactsRounded,
   Email,
-  FilterNoneSharp,
   GitHub,
-  KeyboardArrowDownRounded,
   KeyboardArrowLeftRounded,
   KeyboardArrowRightRounded,
   LinkedIn,
-  Minimize,
   OpenInNewRounded,
 } from "@mui/icons-material";
 import { useMediaQuery } from "../../hooks/use-media-query";
 import mediaQueries from "../../utils/constants";
-import { Link } from "react-router-dom";
-import { Button, Divider, IconButton } from "@mui/material";
+import { Button, Divider } from "@mui/material";
 import "./contacts.css";
 import { useIntl } from "react-intl";
 import messages from "./contacts.messages";
 import TogglesMenu from "../Taskbar/TogglesMenu/togglesMenu";
+import Navbar from "../Navbar/navbar";
 
 type ContactDataType = {
   id: number;
@@ -77,6 +73,13 @@ function Contacts() {
       : setActiveCard(activeCard - 1);
   };
 
+  const navbarTitle = (
+    <div className="navbar__title">
+      <ContactsRounded />
+      <h3>{intl.formatMessage(messages.programTitle)}</h3>
+    </div>
+  );
+
   const cardList = ({ id, icon, title, url, buttonText }: ContactDataType) => (
     <div
       className={`contact__card__content ${title} ${!isTablet && "active"}`}
@@ -109,25 +112,13 @@ function Contacts() {
           isTablet ? "frame__desktop" : "frame__phone"
         }`}
       >
-        <div className="contacts__navbar">
-          <div className="navbar__title">
-            <ContactsRounded />
-            <h3>{intl.formatMessage(messages.programTitle)}</h3>
-          </div>
-          <div className="navbar__buttons">
-            <IconButton
-              onClick={handleOpenMenu}
-              className={`settings__icon ${openSettingsMenu ? "rotate" : ""}`}
-            >
-              <KeyboardArrowDownRounded />
-            </IconButton>
-            <Minimize className="control__minimize" />
-            <FilterNoneSharp className="control__size" />
-            <Link to="/" className="control__close">
-              <Close />
-            </Link>
-          </div>
-        </div>
+        <Navbar
+          containerClassName="contacts__navbar"
+          titleobject={navbarTitle}
+          showSettingsMenu
+          handleOpenMenu={handleOpenMenu}
+          openSettingsMenu={openSettingsMenu}
+        />
 
         <div className="contacts__screen">
           <h3 className="contacts__title">

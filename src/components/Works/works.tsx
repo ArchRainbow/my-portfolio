@@ -4,11 +4,8 @@ import "./works.css";
 import {
   AddOutlined,
   Close,
-  FilterNoneSharp,
   GitHub,
   Home,
-  KeyboardArrowDownRounded,
-  Minimize,
   MoreVert,
   OpenInNewRounded,
 } from "@mui/icons-material";
@@ -19,6 +16,7 @@ import { useState, MouseEvent } from "react";
 import { useIntl } from "react-intl";
 import messages from "./works.messages";
 import TogglesMenu from "../Taskbar/TogglesMenu/togglesMenu";
+import Navbar from "../Navbar/navbar";
 
 function MyWorks() {
   const [settingsMenuAnchor, setSettingsMenuAnchor] =
@@ -31,6 +29,15 @@ function MyWorks() {
     setSettingsMenuAnchor(event.currentTarget);
   };
 
+  const navbarTab = (
+    <div className="navbar__tab">
+      <h4>{intl.formatMessage(messages.tabTitle)}</h4>
+      <Link to="/">
+        <Close fontSize="small" />
+      </Link>
+    </div>
+  );
+
   return (
     <>
       <div
@@ -39,27 +46,13 @@ function MyWorks() {
         } `}
       >
         {isTablet ? (
-          <div className="works__navbar">
-            <div className="navbar__tab">
-              <h4>{intl.formatMessage(messages.tabTitle)}</h4>
-              <Link to="/">
-                <Close fontSize="small" />
-              </Link>
-            </div>
-            <div className="navbar__control">
-              <IconButton
-                onClick={handleClick}
-                className={`settings__icon ${openSettingsMenu ? "rotate" : ""}`}
-              >
-                <KeyboardArrowDownRounded />
-              </IconButton>
-              <Minimize className="control__minimize" />
-              <FilterNoneSharp className="control__size" />
-              <Link to="/" className="control__close">
-                <Close />
-              </Link>
-            </div>
-          </div>
+          <Navbar
+            containerClassName="works__navbar"
+            titleobject={navbarTab}
+            showSettingsMenu
+            handleOpenMenu={handleClick}
+            openSettingsMenu={openSettingsMenu}
+          />
         ) : (
           <div className="works__navigation">
             <Link to="/">
